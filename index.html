@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="zeroum" placeholder="primeiro número"><br>
-    <input type="text" id="zerodois" placeholder="segundo número"><br>
-    <button onclick="calcula('+')">soma</button><br>
-    <button onclick="calcula('-')">subtração</button><br>
-    <button onclick="calcula('*')">multiplicação</button><br>
-    <button onclick="calcula('/')">divisão</button><br>
-    <button onclick="calcula('%')">porcentagem</button>
-    <span id="resultado"></span>
+    <input type="text" name="zeroum" placeholder="primeiro numero"><br>
+    <input type="text" name="zerodois" placeholder="segundo numero">
+    <div>
+        <input type="radio" name="operacao" value="soma"> soma
+        <input type="radio" name="operacao" value="subtracao"> subtração
+        <input type="radio" name="operacao" value="multiplicacao"> multiplicação
+        <input type="radio" name="operacao" value="divisao"> divisão
+    </div>
+    <button onclick="calcula()">Calcular</button>
+    <p>Resutado: <span id="resutado"></span></p>
     <script src="script.js"></script>
 </body>
 </html>
